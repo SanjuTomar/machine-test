@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </li>
+          <div class="info-box-content">
+            <a class="navbar-header" style="float:left" href="#">
+                Logged in As: <% if(username!=''){ %>
+                    <%=username %>
+                
+             <%   } %>
+                
+                    </a> </div>
+      </div>
+          <li class="nav-item">
+            <a class="nav-link item" href="/userlist">userlist</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link item" tyle="float-right" href="/logout">logout</a>
+          </li>
+        
+      
+      </div>
+    </nav>
+</body>
+</html>
+

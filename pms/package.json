@@ -1,0 +1,28 @@
+{
+  "name": "pms",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "express-validator": "^6.4.0",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.7",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "node-localstorage": "^2.1.6",
+    "nodemailer": "^6.4.8",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

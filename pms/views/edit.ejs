@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  </head>
+  <body>
+   
+    <div class="panel-body">
+		<% if(msg !=''){ %>
+			<%= msg %>
+
+		<% } %>
+	</div>
+
+    
+    <form   action="/edit" method="post">
+        <input type="hidden" name="id" value="<%=records._id %>">
+          <div id="edit">
+              <h3 class="text-center text-white pt-5">Update user</h3>
+              <div class="container">
+        
+                  <div id="edit-row" class="row justify-content-center align-items-center">
+                      <div id="edit-column" class="col-md-6">
+                          <div id="edit-box" class="col-md-12">
+                              
+                            <div class="form-group">
+                                <input type="text" class="form-control"value="<%=records.name %> "name="name" placeholder="name" required="required">
+                            </div> 
+                            <div class="form-group">
+                                <input type="email" class="form-control"value="<%=records.email %>" name="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" value="<%=records.password %>"name="password" placeholder="Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"value="<%=records.role %>" name="role" placeholder="role" required="required">
+                            </div>  
+                            <div class="form-group">
+                                <input type="number" class="form-control" value="<%=records.mob %>" name="mob" placeholder="Enter mob" required="required">
+                            </div> 
+                            
+                            <div class="form-group">
+                                <label for="file" class="col-md-3 control-label">Upload File</label>
+                                <div class="col-md-9">
+                                    <input type="file" class="form-control" name="file" required>
+                                </div>
+                            </div>
+                            
+                                    <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Update Now</button>
+                            </div>
+      </form>
+    
+  </body>
+</html>
